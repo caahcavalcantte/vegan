@@ -224,6 +224,7 @@ padding: 10px 10px;
     margin-bottom: 10px;
     
   }
+
   
   .bg-container h2{
     font-size: 22px;
@@ -231,6 +232,10 @@ padding: 10px 10px;
 
   .btn-comprar a{
     font-size: 18px;
+  }
+
+  .galeria-produtos {
+    padding: 40px 10px;
   }
   
   .itens{
