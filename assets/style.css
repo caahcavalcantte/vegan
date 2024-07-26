@@ -17,13 +17,14 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 40px;
+  padding: 40px;
   align-items: center;
   background-color: #ffffff;
 }
 
 .logo-container{
   display: flex;
+  align-items: center;
   
 }
 
@@ -70,11 +71,9 @@ li{
   background-size: cover;
   background-position: center;
   height: 100vh;
-  top: 0px;
-  left: 0px;
   width: 100%;
   height: 100%;
-  z-index: -100000;
+  z-index: -1;
 }
 
 .bg-image::before {
@@ -85,13 +84,18 @@ li{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo escuro com transparência (aqui 0.6 é a opacidade) */
+  z-index: -1;
 }
 
 .bg-container{
   position: relative;
   height: 100vh;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  overflow: hidden; /* Garante que a imagem de fundo não ultrapasse o container */
 }
 
 .bg-container h1{
@@ -102,7 +106,7 @@ li{
 
 .bg-container h2{
   font-size: 40px;
-  color: #bababa;
+  color: #ffffff;
   font-weight: 400;
  
 }
@@ -111,7 +115,7 @@ li{
 .btn-comprar {
   font-size: 22px;
   display: block;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .btn-comprar a{
@@ -174,7 +178,7 @@ li{
 }
 
 .produto h3, p, a, span{
-padding: 10px 10px;
+padding: 10px;
 }
 
 .produto h3{
