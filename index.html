@@ -14,23 +14,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Vegan</title>
+    <title>Vegan & Sabor</title>
   </head>
   <body>
-    <header class="navegacao">
+   <!-- Menu navegaçaõ -->
+    <header id="home" class="navegacao">
       <div class="logo-container">
         <img src="images/fan-solid.svg" alt="" width="26px" />
-        <h1 class="logo">Vegan</h1>
+        <h1 class="logo">Vegan & Sabor</h1>
       </div>
       <nav class="menu-nav">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Produtos</a></li>
-          <li><a href="">Contato</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#pratos">Pratos</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Background Image -->
     <div class="bg-container">
       <div class="bg-image"></div>
       <h1>"Delícias Veganas"</h1>
@@ -42,14 +46,59 @@
         <a href="">Peça já!</a>
       </div>
     </div>
-    <main>
-      <section class="galeria-produtos">
-        <h1>Os Pratos Mais Desejados</h1>
-        
-        <div class="itens">
 
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Sobre a Empresa -->
+      <section id="sobre" class="container-sobre">
+        <h1>Sobre Nós</h1>
+        <h2>Bem-vindo ao Vegan & Sabor!</h2>
+        <div class="sobre">
+          <div class="sobre-detalhes">
+            <h3>O que é o Vegan & Sabor?</h3>
+            <p>
+              No coração da nossa comunidade, o Vegan & Sabor não é apenas um
+              restaurante, mas um lugar onde a paixão pela comida vegana se
+              encontra com a criatividade culinária e o compromisso com a
+              sustentabilidade. Fundado em 1986, o Vegan & Sabor nasceu com a
+              missão de oferecer uma experiência gastronômica inovadora,
+              saudável e deliciosa, utilizando apenas ingredientes frescos e
+              orgânicos.
+            </p>
+            <h3>Nossa Filosofia</h3>
+            <p>
+              No Vegan & Sabor, acreditamos que a comida deve ser uma celebração
+              da vida e um prazer para todos os sentidos. Nosso menu é
+              cuidadosamente elaborado para oferecer pratos vibrantes e cheios
+              de sabor, inspirados nas tradições culinárias ao redor do mundo e
+              nas últimas tendências em nutrição vegana. Cada receita é uma
+              combinação perfeita de ingredientes locais e sazonais, preparada
+              com carinho e atenção aos detalhes.
+            </p>
+          </div>
+
+          <div class="sobre-detalhe sobre-img">
+            <img src="images/jarett-lopez-6WHl6T-fxU0-unsplash.jpg" alt="" />
+          </div>
+
+        </div>
+
+        <!-- Voltar ao topo -->
+         <div class="topo-nav">
+          <p>Voltar ao inicio</p>
+          <img src="" alt="">
+         </div>
+        
+      </section>
+
+      <!-- Sessão Pratos Mais Pedidos -->
+      <section id="pratos" class="galeria-produtos">
+        <h1>Os Pratos Mais Desejados</h1>
+        <h2>"Inspire-se com Pratos Deliciosos e Nutritivos"</h2>
+
+        <div class="itens">
           <div class="produto">
-             <img src="images/jarett-lopez-6WHl6T-fxU0-unsplash.jpg" alt="" />
+            <img src="images/jarett-lopez-6WHl6T-fxU0-unsplash.jpg" alt="" />
             <h3>Tacos de Jackfruit</h3>
             <p>
               Tacos de jackfruit desfiado, temperado e suculento, servido com
@@ -75,7 +124,10 @@
           </div>
 
           <div class="produto">
-             <img src="images/jiroe-matia-rengel-ris5_dfbltU-unsplash.jpg" alt="" />
+            <img
+              src="images/jiroe-matia-rengel-ris5_dfbltU-unsplash.jpg"
+              alt=""
+            />
             <h3>Tacos de Jackfruit</h3>
             <p>
               Tacos de jackfruit desfiado, temperado e suculento, servido com
@@ -88,18 +140,23 @@
           </div>
 
           <div class="produto">
-             <img src="images/jess-torre-6-6sVwz1N2U-unsplash.jpg" alt="" />
+            <img src="images/jess-torre-6-6sVwz1N2U-unsplash.jpg" alt="" />
             <h3>Tacos de Jackfruit</h3>
             <p>
               Tacos de jackfruit desfiado, temperado e suculento, servido com
               guacamole, salsa e coentro em tortillas de milho.
             </p>
-             <div id="comprar">
+            <div id="comprar">
               <a href="">Peça já!</a>
               <span>R$76,00</span>
             </div>
           </div>
         </div>
+         <!-- Voltar ao topo -->
+         <div class="topo-nav">
+          <p>Voltar ao inicio</p>
+          <img src="" alt="">
+         </div>
       </section>
     </main>
   </body>

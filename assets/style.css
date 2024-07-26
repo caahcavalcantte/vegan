@@ -33,7 +33,6 @@ header{
 }
 
 h1{
-  text-transform: uppercase;
   font-size: 30px;
   color: yellowgreen;
 }
@@ -49,9 +48,9 @@ li{
 
 .menu-nav a{
   font-size: 22px;
-  padding: 10px 20px;
-  transition: 1s;
-  color: #212121;
+  padding: 10px 10px;
+  color: #585859;
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -60,6 +59,7 @@ li{
   color: #ffffff;
   border-radius: 5px;
   transition: 2s;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -85,6 +85,7 @@ li{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo escuro com transparência (aqui 0.6 é a opacidade) */
   z-index: -1;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9);
 }
 
 .bg-container{
@@ -94,13 +95,13 @@ li{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   overflow: hidden; /* Garante que a imagem de fundo não ultrapasse o container */
 }
 
 .bg-container h1{
-  font-family: "Indie Flower", cursive, sans-serif;;
+  font-family: "Indie Flower", cursive, sans-serif;
   font-size: 100px;
   font-weight: bold;
 }
@@ -121,22 +122,80 @@ li{
 
 .btn-comprar a{
   background-color: yellowgreen;
-  padding: 10px 20px;
+  padding: 10px 10px;
   color: #ffffff;
   border-radius: 5px;
   font-weight: bold;
-  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
+
+.btn-comprar a:hover{
+  background-color: #ffffff;
+  color: yellowgreen;
+  transition: all 0.3s ease;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.container-sobre{
+  height: auto;
+  padding: 80px 40px;
+  background-color: #121212;
+}
+
+.container-sobre h2{
+  font-weight: 400;
+  color: #bababa;
+  font-size: 28px;
+  font-family: "Indie Flower", cursive, sans-serif;
+}
+
+.sobre{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 30px 0;
+  color: #c8c8c8;
+}
+
+.sobre-detalhes{
+  flex: 1 0 200px;
+}
+
+.sobre-detalhes h3{
+  font-size: 22px;
+}
+
+.sobre-detalhes p{
+  font-size: 18px;
+  padding: 20px 0;
+}
+
+.sobre-img{
+  flex: 1 0 200px;
+}
+
+.sobre-img img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 5px;
+    
+  }
 
 .galeria-produtos{
   height: auto;
   padding: 80px 40px;
 }
 
-.galeria-produtos h1{
-  margin-bottom: 20px;
-  
+.galeria-produtos h2{
+  font-weight: 400;
+  color: #bababa;
+  font-size: 28px;
+  font-family: "Indie Flower", cursive, sans-serif;
+ margin-bottom: 30px; 
 }
 
 .itens{
@@ -164,31 +223,49 @@ li{
 #comprar{
   display: flex;
   justify-content: space-between;
-  padding:20px 10px;
+  padding:20px 20px;
   align-items: center;
 }
 
 #comprar a{
-  padding: 10px 20px;
-  color: #ffffff;
+  padding: 10px 10px;
+  color: yellowgreen;
   border-radius: 5px;
   font-weight: bold;
-  background: yellowgreen;
-  text-transform: uppercase;
+  background: #333333;
   font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#comprar a:hover{
+  background-color: yellowgreen;
+  color: #333333;
+  transition: all 0.3s ease;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 .produto h3, p, a, span{
-padding: 10px;
+padding: 10px 20px;
+}
+
+.produto:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.02);
+  border: 2px solid yellowgreen;
+  
 }
 
 .produto h3{
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
 }
 
+.produto h3:hover{
+  font-size:24px ;
+}
+
 .produto p{
-  font-size: 22px;
+  font-size: 18px;
   color: #c8c8c8;
 }
 
@@ -204,6 +281,7 @@ padding: 10px;
   .navegacao{
     justify-content: center;
     display: block;
+    padding: 30px 20px;
   }
   .logo-container{
     text-align: center;
@@ -224,10 +302,12 @@ padding: 10px;
     font-size: 18px;
   }
 
+  .bg-container{
+    padding: 30px 20px;
+  }
+
   .bg-container h1{
     font-size: 40px;
-    margin-bottom: 10px;
-    
   }
 
   
@@ -237,14 +317,19 @@ padding: 10px;
 
   .btn-comprar a{
     font-size: 18px;
+
   }
 
   .galeria-produtos {
-    padding: 40px 10px;
+    font-size: 18px;
+    padding: 30px 20px;
   }
-  
+
   .itens{
-    gap: 10px;
+    gap: 20px;
   }
   
+  span{
+    padding: 0px;
+  }
 }
