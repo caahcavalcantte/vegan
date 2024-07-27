@@ -379,23 +379,93 @@ padding: 10px 20px;
 
 
 
-@media (max-width:760px){
+@media (max-width:890px){
 
   .navegacao{
-    justify-content: center;
-    display: block;
+    justify-content: space-between;
+    display: flex;
     padding: 30px 20px;
   }
   .logo-container{
     text-align: center;
     margin-bottom: 10px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
-  .menu-nav ul{
-    display: block;
+  .menu-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-nav ul li {
+    list-style: none;
+  }
+  
+  /* Estilos para o menu hambúrguer */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    background-color: yellowgreen;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+    transition: 0.3s;
+  }
+
+  /* Menu Hamburguer */
+  .menu-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-nav.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px; /* Ajuste conforme necessário */
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .menu-nav.active ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .menu-nav.active ul li {
     text-align: center;
   }
+
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+/* Fim  menu */
 
   h1{
     font-size: 26px;
@@ -449,6 +519,7 @@ padding: 10px 20px;
   
   .sobre-img{
     order: 2;
+    width: 100%;
   }
   
 
