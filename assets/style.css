@@ -214,6 +214,8 @@ p{
   padding: 80px 40px;
 }
 
+
+
 .galeria-produtos h2{
   font-weight: 400;
   color: #bababa;
@@ -424,6 +426,14 @@ padding: 10px 20px;
   .container-sobre, .cardapio-container, .galeria-produtos{
     padding: 40px 20px;
   }
+
+  .container-sobre img{
+    height: 300px;
+  }
+
+  .sobre-detalhes p{
+    padding-bottom: 20px;
+  }
   
   .sobre{
     flex-direction: column;
@@ -454,10 +464,52 @@ padding: 10px 20px;
     padding: 0px;
   }
 
+  .acessar-cardapio p{
+    padding-bottom: 20px;
+  }
+
 
   .img-cardapio{
     display: none;
   }
+
+  .galeria-produtos {
+    overflow-x: auto; /* Permite rolagem horizontal */
+    overflow-y: hidden; /* Oculta rolagem vertical, se houver */
+    padding: 40px 0; /* Ajusta o padding para melhor visualização */
+  }
+
+  .galeria-titulo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .itens {
+    display: inline-flex; /* Exibe itens em uma linha única */
+    flex-wrap: nowrap; /* Impede quebra de linha */
+    gap: 10px; /* Espaçamento entre produtos */
+    padding: 0 20px;
+  }
+
+  .produto {
+    flex: 0 0 auto; /* Impede que os itens sejam redimensionados */
+    width: 240px; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .produto img {
+    width: 100%; /* Faz com que a imagem preencha o produto */
+    height: 150px; /* Mantém a proporção da imagem */
+  }
+
+  .produto h3, p, #comprar{
+    padding: 10px 10px;
+  }
+
+  .topo-nav{
+    display: none;
+  }
+
   
 }
 
@@ -474,4 +526,5 @@ padding: 10px 20px;
   }
 
 }
+
 
