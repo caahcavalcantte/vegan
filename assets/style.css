@@ -46,6 +46,10 @@ li{
   padding: 10px 0px 10px 10px;
 }
 
+p{
+  line-height: 1.4;
+}
+
 .menu-nav a{
   font-size: 22px;
   padding: 10px 10px;
@@ -120,7 +124,7 @@ li{
   padding-top: 40px;
 }
 
-.btn-comprar a{
+.btn-comprar a {
   background-color: yellowgreen;
   padding: 10px 10px;
   color: #333333;
@@ -150,6 +154,7 @@ li{
   font-size: 28px;
   font-family: "Indie Flower", cursive, sans-serif;
   padding-bottom: 30px;
+  line-height: 1.1;
 }
 
 .sobre{
@@ -215,6 +220,7 @@ li{
   font-size: 28px;
   font-family: "Indie Flower", cursive, sans-serif;
    margin-bottom: 30px; 
+   line-height: 1.1;
 }
 
 .itens{
@@ -246,7 +252,7 @@ li{
   align-items: center;
 }
 
-#comprar a{
+#comprar a, .acessar-cardapio a {
   padding: 10px 10px;
   color: yellowgreen;
   border-radius: 5px;
@@ -256,7 +262,7 @@ li{
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-#comprar a:hover{
+#comprar a:hover, .acessar-cardapio a:hover{
   background-color: yellowgreen;
   color: #333333;
   transition: all 0.3s ease;
@@ -293,6 +299,82 @@ padding: 10px 20px;
   color: #c8c8c8;
   font-size: 16px;
 }
+
+.cardapio-container{
+  height: auto;
+  padding: 80px 40px;
+  background-color: #121212;
+}
+
+.cardapio-container h2{
+  font-weight: 400;
+  color: #bababa;
+  font-size: 28px;
+  font-family: "Indie Flower", cursive, sans-serif;
+  line-height: 1.1;
+}
+
+.cardapio{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  gap: 20px;
+}
+
+.cardapio img{
+  flex: 1 0 175px;
+}
+
+.acessar-cardapio{
+  flex: 1 0 40%;
+}
+
+.cardapio img{
+  width: 175px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.acessar-cardapio{
+  background-color: #212121;
+  padding: 10px;
+  text-align: center;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.acessar-cardapio h3{
+  font-size: 26px;
+  color: #bababa;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 0 5px 0;
+}
+
+.acessar-cardapio h4{
+  font-weight: 400;
+  font-size: 22px;
+  color: #c8c8c8;
+  padding-bottom: 20px;
+  font-family: "Indie Flower", cursive, sans-serif;
+  line-height: 1.1;
+}
+
+.acessar-cardapio p{
+  font-size: 18px;
+  color: #c8c8c8;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.btn-cardapio{
+  padding: 20px;
+}
+
+
+
 
 
 @media (max-width:760px){
@@ -339,7 +421,7 @@ padding: 10px 20px;
 
   }
   
-  .container-sobre{
+  .container-sobre, .cardapio-container, .galeria-produtos{
     padding: 40px 20px;
   }
   
@@ -362,7 +444,6 @@ padding: 10px 20px;
 
   .galeria-produtos {
     font-size: 18px;
-    padding: 40px 20px;
   }
 
   .itens{
@@ -372,4 +453,25 @@ padding: 10px 20px;
   span{
     padding: 0px;
   }
+
+
+  .img-cardapio{
+    display: none;
+  }
+  
 }
+
+
+@media (max-width: 442px){
+
+  .cardapio{
+    flex-direction: column;
+  }
+
+  .cardapio img{
+    height: 200px;
+    width: 100%;
+  }
+
+}
+
