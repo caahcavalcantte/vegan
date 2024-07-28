@@ -1,3 +1,4 @@
+// Menu hamburguer
 
 document.addEventListener('DOMContentLoaded', function() {
   const menuToggle = document.getElementById('menu-toggle');
@@ -7,3 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     menuNav.classList.toggle('active');
   });
 });
+
+
+
