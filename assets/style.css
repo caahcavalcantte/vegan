@@ -382,8 +382,6 @@ padding: 10px 20px;
   padding: 40px;
 }
 
-.container-cardapio
-
 .container-cardapio p, span{
   padding: 0;
 }
@@ -424,6 +422,7 @@ padding: 10px 20px;
 
 .cardapio-opc{
   display: flex;
+  min-width:300px;
   flex-wrap: wrap;
   justify-content: space-between;
   border-top: 1px solid #585859;
