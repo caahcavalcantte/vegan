@@ -422,7 +422,6 @@ padding: 10px 20px;
 
 .cardapio-opc{
   display: flex;
-  min-width:300px;
   flex-wrap: wrap;
   justify-content: space-between;
   border-top: 1px solid #585859;
@@ -694,9 +693,12 @@ font-size: 22px;
     display: block;
   }
 
+  
+
   .sobre-order{
     display: none;
   }
+
 
 }
 
