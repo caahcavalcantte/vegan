@@ -501,19 +501,31 @@ font-size: 22px;
 
 .reserva{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: center;
 }
 
+.iten-1, .iten-2{
+  grid-column: 1 / span 3;
+}
+
+.iten-6{
+  grid-column: 1 / span 2;
+}
+
+
 .reserva label{
-  display: none;
+  display: block;
+  padding:10px 0 ;
+  color: #c8c8c8;
+  font-size: 18px; 
 }
 
 
 .reserva input, select {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   display: inline-block;
   padding: 20px 20px;
   border-radius: 5px;
@@ -525,6 +537,7 @@ font-size: 22px;
   outline: none;
   appearance: none;
   cursor: pointer;
+  font-weight: 300;
 }
 
 
@@ -540,6 +553,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   filter: invert(1); 
 }
 
+
 .reserva button{
   font-size: 18px;
   color:yellowgreen;
@@ -551,6 +565,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .reserva button:hover{
@@ -844,7 +859,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     grid-template-columns: 1fr;
   }
 
-  
+  .iten-1,.iten-2, .iten-6{
+    grid-column: 1;
+  }
   
 }
 
