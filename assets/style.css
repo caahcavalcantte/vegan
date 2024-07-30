@@ -511,10 +511,10 @@ font-size: 22px;
 }
 
 
-.reserva input, select{
+.reserva input, select {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  display: block;
+  display: inline-block;
   padding: 20px 20px;
   border-radius: 5px;
   border: none;
@@ -522,9 +522,13 @@ font-size: 22px;
   background-color: #121212;
   border: 1px solid #c8c8c8;
   width: 100%;
-  appearance: none; /* Remove o estilo padrão do navegador */
   outline: none;
+  appearance: none;
+  cursor: pointer;
 }
+
+
+
 
 /* invertendo cor do calendario, e relogio */
 
