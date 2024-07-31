@@ -497,6 +497,10 @@ font-size: 22px;
 /* Reservas */
 .container-reservas{
   background-color: #121212;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
 }
 
 .reserva{
@@ -516,42 +520,40 @@ font-size: 22px;
 
 
 .reserva label{
-  display: block;
+  display: none;
   padding:10px 0 ;
   color: #c8c8c8;
   font-size: 18px; 
 }
 
 
-.reserva input, select {
+.reserva input, select, .reserva::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   display: inline-block;
   padding: 20px 20px;
   border-radius: 5px;
   border: none;
-  color: #d9d9d9;
+  color: #777;
   background-color: #121212;
   border: 1px solid #c8c8c8;
   width: 100%;
   outline: none;
   appearance: none;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 500;
 }
 
-
-
-
-/* invertendo cor do calendario, e relogio */
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1); 
+.input-reserva{
+  position: relative;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator {
-  filter: invert(1); 
+.input-reserva i{
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
+
 
 
 .reserva button{
