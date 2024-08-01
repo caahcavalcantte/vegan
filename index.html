@@ -238,7 +238,7 @@
                 CEP 15567-890
               </p>
               <p class="tel">
-                Tel: <a href="tel:+5532995544332">(11) 97554-4332</a>
+                Tel: <a href="tel:+5532995544332">(00) 97554-4332</a>
               </p>
             </div>
 
@@ -251,7 +251,7 @@
               <p>Rua das Palmeiras, 789</p>
               <p>Vila Lobos - SP, <br />CEP 12345-678</p>
               <p class="tel">
-                Tel: <a href="tel:+5532995544332">(11) 99554-4332</a>
+                Tel: <a href="tel:+5532995544332">(00) 99554-4332</a>
               </p>
             </div>
 
@@ -261,7 +261,7 @@
               <p>Av. das Margaridas, 456</p>
               <p>Rio de Janeiro - RJ, <br />CEP 23456-789</p>
               <p class="tel">
-                Tel: <a href="tel:+5532995544332">(21) 89554-4332</a>
+                Tel: <a href="tel:+5532995544332">(00) 89554-4332</a>
               </p>
             </div>
 
@@ -274,7 +274,7 @@
               <p>Rua. Laguna, 56</p>
               <p>Rio de Janeiro - RJ, <br />CEP 23456-789</p>
               <p class="tel">
-                Tel: <a href="tel:+5532995544332">(21) 89554-4332</a>
+                Tel: <a href="tel:+5532995544332">(00) 89554-4332</a>
               </p>
             </div>
           </div>
@@ -286,11 +286,15 @@
         <div class="form-reserva">
           <h1>Reservas</h1>
           <h2>Facilitando Suas Reservas com Simplicidade e Agilidade</h2>
-          <form
+          <form id="form"
             action="https://formsubmit.co/cassiaollyver@hotmail.com"
             method="POST"
             class="reserva"
           >
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+         
+          
+
             <div class="input-reserva iten-1">
               <label for="nome">Nome completo</label>
               <input
@@ -357,8 +361,8 @@
                 placeholder="Observação:"
               />
             </div>
-
-            <button>Efetuar Reserva</button>
+            
+            <button type="submit">Efetuar Reserva</button>
           </form>
         </div>
       </section>

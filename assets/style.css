@@ -392,8 +392,8 @@ padding: 10px 20px;
 }
 
 
-.titulo-lista p{
-  border-bottom: 1px solid #585859;
+.detalhe-cardapio{
+  border-bottom: 1px dashed #585859;
 }
 
 
@@ -414,7 +414,8 @@ padding: 10px 20px;
 }
 
 .descricao-cardapio p{
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 400px;
   color: #bababa;
   padding: 3px 0 10px;
 }
@@ -423,7 +424,7 @@ padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-top: 1px solid #585859;
+  border-top: 1px dashed #585859;
 }
 
 .cardapio-opc h3{
@@ -483,6 +484,7 @@ font-size: 22px;
 .unidades a{
   color: #c8c8c8;
   padding: 0px;
+  font-weight: 400;
 }
 
 .descricao-unidades{
@@ -658,7 +660,7 @@ font-size: 22px;
   margin-left: 5px;
 }
 
-.copy p, a{
+.copy  p, a{
   color: #585859;
   padding: 10px 0;
   font-weight: 700;
@@ -980,16 +982,15 @@ font-size: 22px;
     width: 100%;
   }
 
-
-  .dias-semana{
-    display: block;
+  .cardapio-opc span{
+   align-self: flex-start;
   }
 
   .sobre-order{
     display: none;
   }
 
-  .rodape-container, .dias-semana{
+  .rodape-container, .cardapio-opc {
     flex-direction: column;
   }
 
