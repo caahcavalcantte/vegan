@@ -980,19 +980,30 @@ font-size: 22px;
     width: 100%;
   }
 
-  .cardapio-opc{
+
+  .dias-semana{
     display: block;
   }
-
-  
 
   .sobre-order{
     display: none;
   }
 
-  .rodape-container{
+  .rodape-container, .dias-semana{
     flex-direction: column;
   }
+
+  .rodape-container p{
+    word-break: break-word;
+  }
+
+  /* .reserva label{
+    display: block;
+    padding:10px 0 ;
+    color: #c8c8c8;
+    font-size: 18px; 
+  } */
+  
 
 
 }
