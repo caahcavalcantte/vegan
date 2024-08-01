@@ -76,7 +76,6 @@ p{
   background-position: center;
   height: 100vh;
   width: 100%;
-  height: 100%;
   z-index: -1;
 }
 
@@ -127,7 +126,7 @@ p{
 .btn-comprar a {
   background-color: yellowgreen;
   padding: 10px 10px;
-  color: #333333;
+  color: #ffffff;
   border-radius: 5px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -494,13 +493,14 @@ font-size: 22px;
   padding-bottom: 20px;
 }
 
-/* Reservas */
+/* Fim Contato */
+
+
+/*Início Reservas */
 .container-reservas{
   background-color: #121212;
-  background-image: url();
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
+  height: 100%;
+  
 }
 
 .reserva{
@@ -508,7 +508,11 @@ font-size: 22px;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: center;
+  z-index: 1000;
+  position: relative;
 }
+
+
 
 .iten-1, .iten-2{
   grid-column: 1 / span 3;
@@ -527,14 +531,14 @@ font-size: 22px;
 }
 
 
-.reserva input, select, .reserva::placeholder {
+.reserva input, select {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   display: inline-block;
   padding: 20px 20px;
   border-radius: 5px;
   border: none;
-  color: #777;
+  color: #999;
   background-color: #121212;
   border: 1px solid #c8c8c8;
   width: 100%;
@@ -542,6 +546,10 @@ font-size: 22px;
   appearance: none;
   cursor: pointer;
   font-weight: 500;
+}
+
+.reserva ::placeholder {
+  color: #999;
 }
 
 .input-reserva{
@@ -557,7 +565,7 @@ font-size: 22px;
 
 
 .reserva button{
-  font-size: 18px;
+  font-size: 16px;
   color:yellowgreen;
   display: block;
   padding:20px 20px ;
@@ -578,25 +586,94 @@ font-size: 22px;
   border: none;
 }
 
-
-
-  
-
-
-
-
-
-
 /* Fim Reservas */
 
-/* Fim Contato */
+
 
 /* Footer */
-/* .rodape-container{
+.rodape-container{
   height: auto;
-  background-color: #121212;
-  padding: 190px 40px;
-} */
+  background-color: #212121;
+  padding: 80px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #c8c8c8;
+  gap: 40px;
+  line-height: 1.2;
+}
+
+.box-info{
+  flex: 1 0 200px;
+  
+}
+
+.box-info h3{
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.box-info p ,span, a, .link-contato{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #c8c8c8;
+}
+
+.dias-semana{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #bababa;
+}
+
+.dias-semana p, span{
+  padding: 5px 0 5px;
+  align-self: center;
+}
+
+.link-contato:hover{
+  color: yellowgreen;
+}
+
+.connect-redes{
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+.connect-redes svg{
+  width: 40px;
+}
+
+.copy{
+  padding: 40px 40px;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  color: #585859;
+}
+
+.copy li{
+  margin-left: 5px;
+}
+
+.copy p, a{
+  color: #585859;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.copy a:hover{
+  background-color: yellowgreen;
+  padding:6px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+
 /* Fim Footer */
 
 
@@ -687,6 +764,7 @@ font-size: 22px;
   .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+
 /* Fim  menu */
 
 /* Menu Fixo */
@@ -723,7 +801,7 @@ font-size: 22px;
 
   }
   
-  .container-sobre, .cardapio-container, .galeria-produtos, .container-contato, .container-reservas {
+  .container-sobre, .cardapio-container, .galeria-produtos, .container-contato, .container-reservas, .rodape-container, .copy {
     padding: 40px 20px;
   }
 
@@ -865,6 +943,29 @@ font-size: 22px;
     grid-column: 1;
   }
   
+
+  .copy{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy li{
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .copy p{
+    font-size: 12px;
+    padding: 5px;
+    order: 2;
+    text-align: center;
+  }
+
+  .btn-none{
+    display: none;
+  }
+  
 }
 
 
@@ -887,6 +988,10 @@ font-size: 22px;
 
   .sobre-order{
     display: none;
+  }
+
+  .rodape-container{
+    flex-direction: column;
   }
 
 

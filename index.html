@@ -37,6 +37,7 @@
           <li><a href="#pratos">Pratos</a></li>
           <li><a href="#cardapio">Cardápio</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li><a href="#reservas">Reservas</a></li>
         </ul>
       </nav>
     </header>
@@ -281,82 +282,173 @@
       </section>
 
       <!-- Reservas -->
-      <section class="container-reservas">
+      <section class="container-reservas" id="reservas">
         <div class="form-reserva">
           <h1>Reservas</h1>
           <h2>Facilitando Suas Reservas com Simplicidade e Agilidade</h2>
-          <form action="./" class="reserva" method="post">
-
+          <form
+            action="https://formsubmit.co/cassiaollyver@hotmail.com"
+            method="POST"
+            class="reserva"
+          >
             <div class="input-reserva iten-1">
               <label for="nome">Nome completo</label>
-              <input type="text" id="nome" name="nome"  required placeholder=" Digite seu nome completo...">
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder=" Digite seu nome completo..."
+              />
             </div>
-            
+
             <div class="input-reserva">
               <label for="pessoas">Quantidade de pessoas</label>
-                <select
-                type="number"
-                id="pessoas"
-                name="pessoas"
-                required
-              >
-              <option value="0">Selecione uma ou +</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="6">7</option>
-              <option value="6">8</option>
-              <option value="6">9</option>
-              <option value="6">10</option>
-            </select>
-            <i class="fa-regular fa-user" style="color: #777777;"></i>
+              <select type="number" id="pessoas" name="pessoas" required>
+                <option value="0">Quantidade de pessoas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="6">7</option>
+                <option value="6">8</option>
+                <option value="6">9</option>
+                <option value="6">10</option>
+              </select>
+              <i class="fa-regular fa-user" style="color: #777777"></i>
             </div>
 
             <div class="input-reserva">
               <label for="data">Escolha uma data</label>
-              <input type="text" id="data" name="data"  required placeholder="dd / mm / aaaa">
-              <i class="fa-regular fa-calendar" style="color: #777777;"></i>
+              <input
+                type="text"
+                id="data"
+                name="data"
+                required
+                placeholder="dd / mm / aaaa"
+              />
+              <i class="fa-regular fa-calendar" style="color: #777777"></i>
             </div>
 
             <div class="input-reserva">
               <label for="horario">Selecione um horário</label>
-              <select
-                type="number"
-                id="horario"
-                name="horario"
-                required
-              >
-              <option value="0">Selecione um horário</option>
-              <option value="1">11h00</option>
-              <option value="2">12h00</option>
-              <option value="3">13h00</option>
-              <option value="4">14h00</option>
-              <option value="6">18h00</option>
-              <option value="7">19h00</option>
-              <option value="8">20h00</option>
-              <option value="9">21h00</option> 
-            </select>
-            <i class="fa-regular fa-clock" style="color: #777777;"></i>
+              <select type="number" id="horario" name="horario" required>
+                <option value="0">Selecione um horário</option>
+                <option value="1">11h00</option>
+                <option value="2">12h00</option>
+                <option value="3">13h00</option>
+                <option value="4">14h00</option>
+                <option value="6">18h00</option>
+                <option value="7">19h00</option>
+                <option value="8">20h00</option>
+                <option value="9">21h00</option>
+              </select>
+              <i class="fa-regular fa-clock" style="color: #777777"></i>
             </div>
 
             <div class="input-reserva iten-6">
               <label for="observacao">Observação</label>
-              <input type="text" id="observacao" name="observacao"  required placeholder="Observação:">
+              <input
+                type="text"
+                id="observacao"
+                name="observacao"
+                placeholder="Observação:"
+              />
             </div>
-            
+
             <button>Efetuar Reserva</button>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="rodape-container"></footer>
+    <footer class="rodape-container">
+        <div class="footer-descricao box-info">
+          <h3 class="titulo-footer">Sabor, Sustentabilidade e Comunidade</h3>
+          <p>
+            Na Vegan e Sabores, estamos comprometidos em oferecer refeições
+            deliciosas e sustentáveis que promovem um estilo de vida saudável e
+            consciente. Junte-se a nós na jornada para um futuro mais verde e
+            saboreie a verdadeira essência do veganismo. Siga-nos nas redes
+            sociais e fique por dentro das nossas novidades!
+          </p>
+        </div>
+
+        <div class="horarios box-info">
+          <h3>Horários de Abertura</h3>
+          <div class="dias-semana">
+            <p>Segunda - Feira</p>
+            <span>11:00 às 22:00</span>
+          </div>
+          <div class="dias-semana">
+            <p>Terça - Feira</p>
+            <span>11:00 às 22:00</span>
+          </div>
+          <div class="dias-semana">
+            <p>Quarta - Feira</p>
+            <span>11:00 às 22:00</span>
+          </div>
+          <div class="dias-semana">
+            <p>Quinta - Feira</p>
+            <span>11:00 às 22:00</span>
+          </div>
+          <div class="dias-semana">
+            <p>Sexta - Feira</p>
+            <span>11:00 às 23:00</span>
+          </div>
+          <div class="dias-semana">
+            <p>Sábado</p>
+            <span>11:00 às 23:00</span>
+          </div>
+          <div class="dias-semana">
+            <p>Domingo</p>
+            <span>Fechado</span>
+          </div>
+        </div>
+
+        <div class="connect box-info">
+          <h3>Contato</h3>
+          <p>Feito com <span class="heart">&hearts;</span> por Vegan & Sabores</p>
+          <p>Endereço: Rua das Palmeiras, 789 - Jardim das Flores, São Paulo - SP, CEP 12345-678</p>
+          <p>Telefone: <a class="link-contato" href="tel:+5532995544332">(00) 99554-4332</a></p>
+         <p>Email: <a  class="link-contato" href="mailto:contato@veganesabores.com">contato@veganesabores.com</a></p>
+
+          <div class="connect-redes box-info">
+            <a class="rede-insta"><img src="images/square-instagram-brands-solid (2).svg" alt=""  width="40px"></a>
+            
+            <a href="" class="rede-face"><img src="images/square-facebook-brands-solid (2).svg" alt="" width="40px">
+            </a>
+            <a href="" class="rede-whats">  <img src="images/square-whatsapp-brands-solid (2).svg" alt="" width="40px"></a>
+            
+            
+            <a href="" class="rede-link"><img src="images/linkedin-brands-solid (2).svg" alt="" width="40px"></a>
+            
+          </div>
+          
+          <a class="link-contato" href="">Trabalhe Conosco</a>
+        </div>
+    </footer>
+    <footer class="copy">
+      <p>&copy; 2024 Vegan e Sabores. Todos os direitos reservados</p>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Sobre</a></li>
+          <li class="btn-none"><a href="">Pratos</a></li>
+          <li class="btn-none"><a href="">Cardápio</a></li>
+          <li><a href="">Contato</a></li>
+          <li class="btn-none"><a href="">Reservas</a></li>
+        </ul>
+      </nav>
+    </footer>
 
     <script src="script.js" defer></script>
 
-    <script src="https://kit.fontawesome.com/379521cacb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/379521cacb.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
