@@ -482,6 +482,7 @@ font-size: 22px;
 }
 
 .unidades a{
+  font-size: 18px;
   color: #c8c8c8;
   padding: 0px;
   font-weight: 400;
@@ -931,6 +932,10 @@ font-size: 22px;
 
   .unidades{
     padding: 20px  0 20px;
+  }
+
+  .unidades a{
+    font-size: 16px;
   }
 
   .descricao-unidades h3{
