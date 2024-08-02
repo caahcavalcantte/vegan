@@ -533,7 +533,7 @@ font-size: 22px;
 }
 
 
-.reserva input, select {
+.reserva input, select{
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   display: inline-block;
@@ -548,6 +548,11 @@ font-size: 22px;
   appearance: none;
   cursor: pointer;
   font-weight: 500;
+  transition: .3s;
+}
+
+.reserva input:focus, select:focus{
+  border-color: yellowgreen;
 }
 
 .reserva ::placeholder {
@@ -562,6 +567,13 @@ font-size: 22px;
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.span-required{
+  font-size: 12px;
+  margin: 3px 0 0 1px;
+  color: #e63636;
+  display: none;
 }
 
 

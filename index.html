@@ -301,15 +301,17 @@
                 type="text"
                 id="nome"
                 name="nome"
-                required
                 placeholder=" Nome"
+                class="required"
+                oninput="nameValidate()"
               />
+              <span class="span-required">Digite seu nome completo</span>
             </div>
 
             <div class="input-reserva">
               <label for="pessoas">Quantidade de pessoas</label>
-              <select type="number" id="pessoas" name="pessoas" required>
-                <option value="0">Qtd. Pessoas</option>
+              <select type="number" id="pessoas" name="pessoas" class="required" oninput="pessoasValidate()">
+                <option  value="0">Qtd. Pessoas</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -322,6 +324,7 @@
                 <option value="6">10</option>
               </select>
               <i class="fa-regular fa-user" style="color: #777777"></i>
+              <span class="span-required">Selecione a quantidade de pessoas</span>
             </div>
 
             <div class="input-reserva">
@@ -330,15 +333,17 @@
                 type="text"
                 id="data"
                 name="data"
-                required
                 placeholder="dd / mm / aaaa"
+                class="required"
+                oninput="dataValidate()"
               />
               <i class="fa-regular fa-calendar" style="color: #777777"></i>
+              <span class="span-required">Digite a data no formato dd/mm/aaaa</span>
             </div>
 
             <div class="input-reserva">
               <label for="horario">Selecione um horário</label>
-              <select type="number" id="horario" name="horario" required>
+              <select type="number" id="horario" name="horario" class="required" oninput="horaValidate()">
                 <option value="0">Horário</option>
                 <option value="1">11h00</option>
                 <option value="2">12h00</option>
@@ -350,6 +355,7 @@
                 <option value="9">21h00</option>
               </select>
               <i class="fa-regular fa-clock" style="color: #777777"></i>
+              <span class="span-required">Selecione um horário</span>
             </div>
 
             <div class="input-reserva iten-6">
