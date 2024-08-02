@@ -75,8 +75,5 @@ Sinta-se à vontade para contribuir com melhorias e correções. Para contribuir
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## Contato
-
-Para mais informações, entre em contato através do e-mail: [contato@veganesabores.com](mailto:contato@veganesabores.com).
 
 
